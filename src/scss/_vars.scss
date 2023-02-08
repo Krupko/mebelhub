@@ -1,0 +1,26 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Gilroy";
+  --content-width: 1190px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  //various
+  --radius12: 12px;
+  --radius16: 16px;
+  --radius20: 20px;
+  --radius24: 24px;
+  --radius32: 32px;
+
+  // colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-baltic-sea: #28212b;
+  --color-orange-peel: #fc9900;
+  --color-fuel-yellow: #ee9f38;
+  --color-nutmeg-wood-finish: #6f3f00;
+  --color-cinnabar: #ed3b3b;
+  --color-alto: #d9d9d9;
+}

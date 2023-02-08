@@ -1,0 +1,227 @@
+// ? ======= hero start ======= //
+.hero {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(40, 33, 43, 0.747) 0%, rgba(40, 33, 43, 0.9) 100%), url(../img/hero-bg.jpeg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 605px;
+    height: 605px;
+    left: -312px;
+    top: -90px;
+    background: linear-gradient(rgba(252, 153, 0, 0.5));
+    filter: blur(125px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 605px;
+    height: 605px;
+    left: 1087px;
+    top: 397px;
+    background-image: linear-gradient(rgba(252, 153, 0, 0.5));
+    filter: blur(125px);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: calc(174px + (234 - 174) * ((100vw - 414px) / (1440 - 414)));
+  }
+
+  &__content {
+    width: 70%;
+    padding-left: 15px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: calc(36px + (54 - 36) * ((100vw - 414px) / (1440 - 414)));
+    line-height: calc(39px + (59 - 39) * ((100vw - 414px) / (1440 - 414)));
+    color: var(--color-white);
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 27px;
+    color: var(--color-white);
+
+    &--footer {
+      font-size: 16px;
+      padding-bottom: 199px;
+    }
+  }
+
+  &__btn {
+    width: 21em;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+    padding: 1.4em 2.75em;
+    border-radius: var(--radius12);
+  }
+
+  &__icon {
+    font-size: 20px;
+    color: var(--color-white);
+  }
+
+  // ? ======= hero baner ======= //
+
+  &__baner {
+    width: calc(374px + (512 - 374) * ((100vw - 414px) / (1440 - 414)));
+    height: calc(318px + (336 - 318) * ((100vw - 414px) / (1440 - 414)));
+    background: rgba(17, 16, 18, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 24px;
+    padding-top: 56px;
+    padding-left: 56px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-right: 14px;
+    margin-top: 4px;
+    position: relative;
+  }
+
+  &__item {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:not(:first-child) {
+      margin-top: 41px;
+    }
+  }
+
+  &__marker {
+    min-width: 47px;
+    min-height: 47px;
+    background-color: var(--color-orange-peel);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-nutmeg-wood-finish);
+    box-shadow: 0px 0px 9.3px var(--color-fuel-yellow);
+  }
+
+  &__pic {
+    width: 219px;
+    height: 219px;
+    position: absolute;
+    top: -18%;
+    right: -22%;
+  }
+
+  &__baner845 {
+    display: none;
+  }
+}
+
+// ? ======= hero media start ======= //
+
+@media screen and (max-width: 1220px) {
+  .hero {
+    &__baner {
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    &__br1 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .hero {
+    &__br2 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .hero {
+    &__container {
+      padding-top: 130px;
+      justify-content: center;
+    }
+
+    &__content {
+      width: 90%;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__baner846 {
+      display: none;
+    }
+
+    &__baner845 {
+      display: flex;
+      margin: 40px 0;
+    }
+
+    &__pic {
+      width: 119px;
+      height: 119px;
+      position: absolute;
+      top: -5%;
+      right: -5%;
+    }
+
+    &__btn {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 441px) {
+  .hero {
+    &__container {
+      padding-top: 160px;
+      align-items: flex-start;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__text {
+      align-self: flex-start;
+    }
+  }
+}

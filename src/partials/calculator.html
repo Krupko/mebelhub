@@ -1,0 +1,87 @@
+<!-- ? ======= calculator start ======= -->
+<section class="calculator">
+  <h2 class="visually-hidden">Расчет стоимости</h2>
+  <div class="calculator__container container">
+    <div class="calculator__image-top">
+      <img class="calculator__pic-top" loading="lazy" src="img/shavings2.png" alt="Шкафы">
+    </div>
+    <section class="calculator__content">
+      <h2 class="calculator__title title">
+        Рассчитайте<br> <span class="accent-color">стоимость</span> <br>вашей мебели
+      </h2>
+      <p class="calculator__text subtitle">
+        Введите данные для<br> предварительного<br> расчета стоимости вашей мебели
+      </p>
+    </section>
+    <div class="calculator__right-wrapper">
+      <div class="calculator__border">
+
+        <!-- ? ======= calculator form start ======= -->
+
+        <form class="calculator__form" action="#">
+
+          <span class="calculator__form-text">Вид мебели</span>
+          <select class="calculator__select" name="interior" id="interior">
+            <option value="Мебель">Мебель</option>
+            <option value="Шкафы">Шкафы</option>
+            <option value="Шкафы-купе">Шкафы-купе</option>
+            <option value="Подрастковые детские">Подрастковые детские</option>
+            <option value="Спальни">Спальни</option>
+            <option value="Гардеробные">Гардеробные</option>
+            <option value="Прихожие">Прихожие</option>
+            <option value="Мебель в стиле">Мебель в стиле "LOFT"</option>
+            <option value="Кухни">Кухни</option>
+          </select>
+
+          <span class="calculator__form-text">Фасадочный материал</span>
+          <div class="calculator__form-material-wrapper">
+            <button class="calculator__form-btn">ЛДСП</button>
+            <button class="calculator__form-btn">TSS-плиты</button>
+            <button class="calculator__form-btn">Пленка</button>
+            <button class="calculator__form-btn">Пластик</button>
+            <button class="calculator__form-btn">Крашенный</button>
+          </div>
+
+          <div class="calculator__form-material-wrapper calculator__form-material-wrapper--kitchen is-hidden">
+            <span class="calculator__form-text">Фасадочный материал</span>
+            <button class="calculator__form-btn">ЛДСП в пластике (влагостойкий)</button>
+            <button class="calculator__form-btn">Искусственный камень</button>
+            <button class="calculator__form-btn calculator__form-btn--lower">Натуральный камень</button>
+          </div>
+
+          <span class="calculator__form-text">Примерные размеры</span>
+
+          <div class="calculator__form-wrapper-input">
+            <label class="calculator__form-label" for="width">
+              <input class="calculator__form-input input-reset" type="text" name="width">
+              Ширина
+            </label>
+            <i class="calculator__uniE909 icn-uniE909"></i>
+            <label class="calculator__form-label" for="length">
+              <input class="calculator__form-input input-reset" type="text" name="length">
+              Длинна
+            </label>
+            <i class="calculator__uniE909 icn-uniE909"></i>
+            <label class="calculator__form-label" for="height">
+              <input class="calculator__form-input input-reset" type="text" name="height">
+              Высота
+            </label>
+          </div>
+
+          <button class="calculator__form-button btn">Заказать расчет стоимости
+            <i class="calculator__icon icn-hero-file"></i>
+          </button>
+
+          <span class="calculator__form-text--footer">
+            Нажимая кнопку ‘Заказать расчет стоимости’ вы соглашаетесь<br> с политикой конфиденциальности
+          </span>
+
+        </form>
+      </div>
+      <picture class="calculator__image-bottom">
+        <source srcset="img/hero-baner.webp" type="image/webp">
+        <img class="calculator__pic-bottom" loading="lazy" src="img/hero-baner.png" alt="Стружка">
+      </picture>
+    </div>
+  </div>
+</section>

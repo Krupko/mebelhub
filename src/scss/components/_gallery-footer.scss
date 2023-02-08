@@ -1,0 +1,118 @@
+// ! ======= gallery-footer start ======= //
+
+.gallery-footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.69) 3%, rgba(0, 0, 0, 0) 95.5%),
+    linear-gradient(0deg, rgba(238, 159, 56, 0.1), rgba(238, 159, 56, 0.1)), url(../../img/gallery-footer-bg.jpeg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding-top: 99px;
+    padding-bottom: 100px;
+    padding-left: 29px;
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--color-white);
+    max-width: 80%;
+  }
+
+  &__subtitle {
+    color: var(--color-white);
+    max-width: 40%;
+    margin-top: 28px;
+    margin-bottom: 89px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 344px);
+    grid-template-rows: 218px;
+    grid-auto-rows: 218px;
+    gap: 64px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-left: 35px;
+    background: rgba(252, 153, 0, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: var(--radius24);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--color-white);
+  }
+
+  &__icon {
+    color: var(--color-orange-peel);
+    font-size: 37px;
+    text-shadow: 0px 0px 9.2px var(--color-orange-peel);
+    margin-bottom: 36px;
+  }
+}
+
+//? ======= gallery-footer media start ======= //
+
+@media screen and (max-width: 1205px) {
+  .gallery-footer {
+    &__list {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1116px) {
+  .gallery-footer {
+    &__container {
+      width: 740px;
+      padding-left: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .gallery-footer {
+    &__container {
+      width: 500px;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__list {
+      align-self: center;
+      grid-template-columns: 374px;
+    }
+
+    &__title {
+      max-width: 100%;
+    }
+
+    &__subtitle {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .gallery-footer {
+    &__container {
+      width: 100%;
+    }
+  }
+}

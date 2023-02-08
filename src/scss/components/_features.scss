@@ -1,0 +1,120 @@
+// ? ======= features start ======= //
+
+.features {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-baltic-sea);
+  background-image: url(../img/gallery-footer-bg.jpeg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  padding: 97px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 605px;
+    height: 605px;
+    left: -219px;
+    top: 830px;
+    background: var(--color-orange-peel);
+    opacity: .5;
+    filter: blur(125px);
+  }
+
+  &__container {
+    padding-left: 30px;
+  }
+
+  &__title,
+  &__text {
+    color: var(--color-white);
+  }
+
+  &__text {
+    margin: 27px 0 78px;
+  }
+
+  &__wrapper-cards {
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  &__card {
+    min-width: 457px;
+    background: rgba(17, 16, 18, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: var(--radius24);
+    padding: 32px 49px 32px 93px;
+    color: var(--color-white);
+
+    position: relative;
+  }
+
+  &__card--1 {
+    grid-column: 3 / 7;
+    grid-row: 1 / 5;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+  }
+
+  &__card--2 {
+    grid-column: -2 / -6;
+    grid-row: -12 / -8;
+    margin-left: 25px;
+    margin-top: 18px;
+  }
+
+  &__card--3 {
+    grid-column: 4 / 8;
+    grid-row: 7 / 11;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+
+  &-card__namber {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background-color: var(--color-orange-peel);
+    box-shadow: 0px 0px 21px var(--color-fuel-yellow);
+    position: absolute;
+    left: -54px;
+    top: 31px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 59px;
+    color: var(--color-nutmeg-wood-finish);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-card__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &-card__text {
+    margin: 12px 0 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+// ? ======= features media start ======= //
+// ! ======= Первый брек поинт на 1225px ======= //
