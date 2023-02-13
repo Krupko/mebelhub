@@ -1,4 +1,4 @@
-// ? ======= features start ======= //
+/*? ======= features start =======  */
 
 .features {
   width: 100%;
@@ -11,22 +11,24 @@
   position: relative;
   overflow: hidden;
 
-  padding: 97px 0;
+  padding: 97px 0 38px 0;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 605px;
     height: 605px;
     left: -219px;
     top: 830px;
     background: var(--color-orange-peel);
-    opacity: .5;
+    opacity: 0.5;
     filter: blur(125px);
   }
 
   &__container {
-    padding-left: 30px;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   &__title,
@@ -53,7 +55,6 @@
     border-radius: var(--radius24);
     padding: 32px 49px 32px 93px;
     color: var(--color-white);
-
     position: relative;
   }
 
@@ -80,8 +81,8 @@
   }
 
   &-card__namber {
-    width: 108px;
-    height: 108px;
+    width: clamp(4rem, 2.89rem + 4.29vw, 6.75rem);
+    height: clamp(4rem, 2.89rem + 4.29vw, 6.75rem);
     border-radius: 50%;
     background-color: var(--color-orange-peel);
     box-shadow: 0px 0px 21px var(--color-fuel-yellow);
@@ -91,7 +92,7 @@
 
     font-style: normal;
     font-weight: 800;
-    font-size: 44px;
+    font-size: clamp(2rem, 1.697rem + 1.17vw, 2.75rem);
     line-height: 59px;
     color: var(--color-nutmeg-wood-finish);
 
@@ -116,5 +117,91 @@
     line-height: 19px;
   }
 }
-// ? ======= features media start ======= //
-// ! ======= Первый брек поинт на 1225px ======= //
+/*? ======= features media start ======= */
+
+@media screen and (max-width: 1200px) {
+  .features {
+    &::after {
+      content: none;
+    }
+
+    &__container {
+      width: 100%;
+    }
+
+    &__wrapper-cards {
+      width: 70%;
+      height: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__card {
+      width: 457px;
+      height: 170px;
+      margin: 0;
+    }
+
+    &__card--2 {
+      align-self: self-end;
+    }
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .features {
+    &__wrapper-cards {
+      width: 100%;
+      height: 700px;
+      align-items: center;
+    }
+
+    &__card {
+      min-width: 374px;
+      min-height: 170px;
+      background: rgba(17, 16, 18, 0.3);
+      backdrop-filter: blur(25px);
+      border-radius: var(--radius24);
+      padding: 32px 49px 32px 32px;
+      color: var(--color-white);
+      position: relative;
+    }
+
+    &__card--2 {
+      align-self: auto;
+    }
+
+    &-card__namber {
+      left: auto;
+      right: 3px;
+      top: -40px;
+    }
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .features {
+    padding: 60px 0;
+    background-image: none;
+
+    &::after {
+      background: none;
+    }
+
+    &__wrapper-cards {
+      height: 650px;
+    }
+
+    &__card {
+      min-width: 318px;
+      min-height: 120px;
+      max-width: 354px;
+      max-height: 170px;
+      padding: 32px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-// ? ======= header start ======= //
+/*? ======= header start ======= */
 .header {
   margin: 0 auto;
   width: 100%;
@@ -14,8 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-right: 29px;
-    padding-left: 43px;
+    padding-right: 0;
+    padding-left: 11px;
   }
 
   &__logo {
@@ -79,7 +79,15 @@
   }
 }
 
-// ? ======= header media start ======= //
+/*? ======= header media start ======= */
+
+@media screen and (max-width: 1180px) {
+  .header {
+    &__container {
+      padding-right: 10px;
+    }
+  }
+}
 
 @media screen and (max-width: 951px) {
   .header {

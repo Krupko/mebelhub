@@ -1,4 +1,4 @@
-// ? ======= hero start ======= //
+/*? ======= hero start ======= */
 .hero {
   width: 100%;
   height: auto;
@@ -35,7 +35,10 @@
   &__container {
     position: relative;
     z-index: 7;
-    width: 100%;
+    width: 1210px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -82,7 +85,7 @@
     color: var(--color-white);
   }
 
-  // ? ======= hero baner ======= //
+  /*? ======= hero baner ======= */
 
   &__baner {
     width: calc(374px + (512 - 374) * ((100vw - 414px) / (1440 - 414)));
@@ -145,10 +148,14 @@
   }
 }
 
-// ? ======= hero media start ======= //
+/*? ======= hero media start ======= */
 
 @media screen and (max-width: 1220px) {
   .hero {
+    &__container {
+      width: 100%;
+    }
+
     &__baner {
       padding-top: 30px;
       padding-left: 30px;
@@ -205,6 +212,12 @@
 
     &__btn {
       margin-top: 0px;
+    }
+
+    &__text {
+      &--footer {
+        padding-bottom: 70px;
+      }
     }
   }
 }

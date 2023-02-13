@@ -1,4 +1,4 @@
-// ? ======= gallery-body start ======= //
+/*? ======= gallery-body start ======= */
 .gallery-body {
   width: 100%;
   background-color: var(--color-baltic-sea);
@@ -81,7 +81,7 @@
   }
 }
 
-// ? ======= gallery-body media start ======= //
+/*? ======= gallery-body media start ======= */
 @media screen and (max-width: 1066px) {
   .gallery-body {
     grid-template-columns: repeat(2, 1fr);
