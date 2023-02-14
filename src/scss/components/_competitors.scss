@@ -1,0 +1,145 @@
+/*? ======= competitiors start =======  */
+
+.competitors {
+  width: 100%;
+  background-image: url(../img/bg2.jpeg);
+  background-color: var(--color-baltic-sea);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 95px;
+  padding-bottom: 72px;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    width: 605px;
+    height: 605px;
+    content: "";
+    display: block;
+    background: rgba(237, 59, 59, 0.5);
+    filter: blur(125px);
+    left: -343px;
+    top: -222px;
+  }
+
+  &-container {
+    max-width: 1163px;
+    margin: 0 auto;
+    color: var(--color-white);
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__title--red {
+    color: var(--color-cinnabar);
+  }
+
+  &__text {
+    margin: 0 0 89px 0;
+  }
+
+  &__wrapper-card {
+    width: 1183px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__card {
+    width: 370px;
+    min-height: 500px;
+    padding: 6px;
+
+    background: rgba(17, 16, 18, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: var(--radius24);
+    position: relative;
+  }
+
+  &__close {
+    width: 54px;
+    height: 54px;
+    background-color: rgba(237, 59, 59, 0.5);
+    border-radius: var(--radius14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  &__icn-fi-x {
+    font-size: 16px;
+    color: var(--color-cinnabar);
+  }
+
+  &__pic {
+    width: 358px;
+    height: 238px;
+    border-radius: var(--radius18);
+  }
+
+  &__title-card {
+    margin: 17px 26px 16px 26px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__text-card {
+    margin: 0 46px 53px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+/*? ======= competitiors media start =======  */
+@media screen and (max-width: 1184px) {
+  .competitors {
+    &__wrapper-card {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .competitors {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .competitors {
+    background-image: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &::after {
+      display: none;
+    }
+
+    &-container {
+      align-items: flex-start;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__text {
+      margin: 0 0 60px 0;
+    }
+  }
+}
