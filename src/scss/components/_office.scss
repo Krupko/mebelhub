@@ -1,0 +1,119 @@
+/*? ======= office start ======= 165px */
+
+.office {
+  width: 100%;
+  background-color: var(--color--white);
+  display: flex;
+  justify-content: flex-end;
+  gap: 85px;
+
+  &__content {
+    padding-top: 106px;
+    padding-bottom: 103px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 52px;
+  }
+
+  &__wrapper {
+    width: 494px;
+    height: 474px;
+    background-color: var(--color-orange-peel);
+    border-radius: var(--radius32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__border {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 60px 32px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.3);
+    border-radius: var(--radius24);
+  }
+
+  &__title-form {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--color-black);
+    margin-bottom: 18px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-form__label {
+    width: 100%;
+    height: 64px;
+    border-radius: var(--radius20);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &-form__label:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  &-form__input {
+    width: 80%;
+    height: 80%;
+  }
+
+  &-form__input:active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &-form__label--button {
+    background-color: var(--color-orange-peel);
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+
+  &-form__input--button {
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &-form__text-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: var(--color-black);
+    opacity: 0.4;
+  }
+
+  &__map {
+    width: 40%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    &-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+}
+
+/*? ======= office media start =======  */
