@@ -29,6 +29,10 @@
     color: var(--color-black);
   }
 
+  &__nav-tabs849 {
+    display: none;
+  }
+
   &__nav-tabs-title {
     margin: 0 0 98px 0;
   }
@@ -62,10 +66,16 @@
 
   &__wrapper-content {
     width: 70%;
+    margin-left: 15px;
+  }
+
+  &__tabs {
+    height: 570px;
   }
 
   &__tab {
     display: none;
+    height: 100%;
   }
 
   &__tab-active {
@@ -78,7 +88,7 @@
 .out-work {
   &__swiper {
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
 
   &__slide {
@@ -89,11 +99,13 @@
 
   &__pic {
     height: 100%;
+    border-radius: var(--radius20);
   }
-  .swiper-horizontal > &__scrollbar {
-    width: 80%;
-    height: 2px;
-  }
+}
+
+.swiper-horizontal > .out-work__scrollbar {
+  max-width: 80%;
+  height: 2px;
 }
 
 .swiper-scrollbar-drag {
@@ -118,3 +130,82 @@
 }
 
 /*? ======= our-work media start =======  */
+
+@media screen and (max-width: 1220px) {
+  .out-work {
+    &__nav-tabs {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .out-work {
+    &__nav-tabs {
+      display: none;
+    }
+
+    &__nav-tabs849 {
+      display: block;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    &__nav-tabs-title {
+      margin-bottom: 25px;
+    }
+
+    &__nav-tabs-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__nav-tabs-item:last-child {
+      margin-bottom: 15px;
+    }
+
+    &__nav-tabs-item:first-child {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: var(--radius20);
+      height: 64px;
+      width: 374px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &__btn {
+      border: none;
+      background-color: transparent;
+      transform: rotate(270deg);
+    }
+
+    &-item-none {
+      display: none;
+    }
+
+    &__tabs {
+      width: 100%;
+    }
+
+    &__wrapper-content {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .out-work{
+    &__wrapper-content {
+     margin-left: 0;
+     padding-left: 10px;
+    }
+
+    &__nav-tabs-item:first-child{
+      width: 97%;
+    }
+  }
+}

@@ -12,6 +12,11 @@
     padding-bottom: 103px;
   }
 
+  &__title1100,
+  &__text1100 {
+    display: none;
+  }
+
   &__title {
     margin-bottom: 24px;
   }
@@ -117,3 +122,59 @@
 }
 
 /*? ======= office media start =======  */
+
+@media screen and (max-width: 1100px) {
+  .office {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+
+    &__title,
+    &__text {
+      display: none;
+    }
+
+    &__title1100,
+    &__text1100 {
+      display: block;
+    }
+
+    &__map {
+      height: 476px;
+      width: calc(100% - 40px);
+    }
+
+    &__content {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .office {
+    &__title,
+    &__text {
+      margin: 0 20px;
+
+      align-self: self-start;
+      max-width: 290px;
+    }
+
+    &__content{
+      display: flex;
+      justify-content: center;
+    }
+
+    &__wrapper {
+      width: calc(100% - 40px);
+      height: calc(542px - 40px);
+    }
+
+    &__border{
+      padding: 2em .5em;
+    }
+  }
+}
