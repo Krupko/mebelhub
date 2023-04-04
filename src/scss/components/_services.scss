@@ -7,6 +7,13 @@
     position: relative;
     min-height: 100%;
   }
+  &__image {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
 
   &__pic {
     background-size: cover;
@@ -62,8 +69,9 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
-    bottom: 141px;
+    bottom: 96px;
     left: 141px;
   }
 
@@ -96,6 +104,10 @@
     transform: rotate(90deg);
     position: absolute;
     top: 35%;
+  }
+
+  &__pagination--650 {
+    display: none;
   }
 }
 
@@ -191,7 +203,6 @@
     }
 
     &__wrapper-nav {
-      bottom: 30px;
       left: 450px;
     }
   }
@@ -218,7 +229,6 @@
     }
 
     &__wrapper-nav {
-      bottom: 30px;
       left: 400px;
     }
   }
@@ -258,11 +268,6 @@
       margin-top: 300px;
     }
 
-    &__pagination {
-      transform: rotate(360deg);
-      left: 176px;
-    }
-
     &__wrapper-nav {
       width: 374px;
       bottom: 140px;
@@ -277,10 +282,28 @@
       left: 50%;
       transform: translateX(-187px);
     }
+
+    &__pagination {
+      display: none;
+    }
+
+    &__pagination--650 {
+      display: block;
+      transform: rotate(360deg);
+      position: relative;
+    }
   }
 
   .swiper-pagination-bullet {
     display: none;
+    right: auto;
+    &-active {
+      display: block;
+      position: absolute;
+      transform: rotate(0deg);
+      bottom: 50px;
+      left: 95px;
+    }
   }
 }
 
@@ -292,18 +315,6 @@
       max-width: 380px;
       top: 40px;
       left: 10px;
-    }
-
-    &__pagination {
-      top: 74%;
-    }
-  }
-
-  .swiper-pagination-bullet {
-    &-active {
-      display: block;
-      left: -444%;
-      transform: rotate(0deg);
     }
   }
 }

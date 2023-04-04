@@ -1,0 +1,133 @@
+/* ? ======= recommendations start =======  */
+.recommendations {
+  width: 100%;
+  padding-top: 127px;
+  padding-left: 140px;
+  padding-bottom: 110px;
+  background-color: var(--color-white);
+
+  &__subtitle {
+    margin-top: 28px;
+  }
+
+  &__swiper {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  &__slide {
+    height: 309px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 42px;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius20);
+  }
+
+  &__slide-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 65px;
+  }
+
+  &__slide-left {
+    width: 50%;
+    font-family: "Mulish";
+    font-style: normal;
+  }
+
+  &__slide-title {
+    margin-top: 36px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__slide-text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__slide-right {
+    width: 50%;
+    height: 100%;
+  }
+
+  &__pic {
+    width: 100%;
+    min-height: 100%;
+    border-radius: var(--radius16);
+  }
+
+  &__wrapper-nav {
+    width: 144px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+  }
+
+  &__button-next,
+  &__button-prev {
+    width: 68px;
+    height: 68px;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    border: 1px solid rgba(252, 153, 0, 0.5);
+    border-radius: var(--radius20);
+
+    &:after {
+      font-size: 20px;
+      color: var(--color-orange-peel);
+    }
+  }
+}
+/* ? ======= recommendations media start =======  */
+@media screen and (max-width: 795px) {
+  .recommendations {
+    height: auto;
+    padding: 50px 10px;
+
+    &__swiper {
+      padding-top: 0;
+    }
+
+    &__slide-wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__slide {
+      height: auto;
+      padding-left: 6px;
+    }
+
+    &__slide-left,
+    &__slide-right {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .recommendations {
+    padding-bottom: 30px;
+
+    &__wrapper-nav{
+      right: 0;
+      left: auto;
+    }
+  }
+}
