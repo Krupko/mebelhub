@@ -116,6 +116,8 @@
 
     &-container {
       width: 100%;
+      position:relative;
+      z-index: 4;
     }
 
     &__privacy {
@@ -157,6 +159,8 @@
 
 @media screen and (max-width: 578px) {
   .footer{
+    padding-left: 15px;
+    padding-right: 15px;
     flex-direction: column;
 
     &-container{
@@ -164,7 +168,8 @@
     }
 
     &__privacy {
-      left: 10px;
+      left: 15px;
+      width: 50%;
     }
   }
 }
@@ -182,10 +187,6 @@
 
     &-container{
       margin-bottom: 48px;
-    }
-
-    &__privacy {
-      width: 230px;
     }
   }
 }

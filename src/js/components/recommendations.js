@@ -31,7 +31,7 @@ const recommendationsSwiper = new Swiper(".recommendations__swiper", {
     },
     1220: {
       slidesPerView: 1.7,
-      speceBetween: 30,
+      speceBetween: 40,
     },
   }
 });
